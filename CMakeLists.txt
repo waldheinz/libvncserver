@@ -167,8 +167,8 @@ TEST_BIG_ENDIAN(LIBVNCSERVER_WORDS_BIGENDIAN)
 # LIBVNCSERVER_ENOENT_WORKAROUND
 # inline
 
-configure_file(${CMAKE_CURRENT_SOURCE_DIR}/rfb/rfbconfig.h.cmake ${CMAKE_BINARY_DIR}/rfb/rfbconfig.h)
-configure_file(${CMAKE_CURRENT_SOURCE_DIR}/rfb/rfbint.h.cmake ${CMAKE_BINARY_DIR}/rfb/rfbint.h)
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/rfb/rfbconfig.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/rfb/rfbconfig.h)
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/rfb/rfbint.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/rfb/rfbint.h)
 
 set(LIBVNCSERVER_SOURCES
     ${LIBVNCSERVER_DIR}/main.c
